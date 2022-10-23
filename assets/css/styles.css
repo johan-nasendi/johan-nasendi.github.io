@@ -649,6 +649,11 @@ img {
     color: var(--text-color-light);
 }
 
+.qualification__calender a {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
 .qualification__rounder {
     display: inline-block;
     width: 13px;

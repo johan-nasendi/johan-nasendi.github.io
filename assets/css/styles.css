@@ -878,6 +878,21 @@ img {
     justify-self: center;
 }
 
+.imgabout {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.1;
+}
+
+.imgabout:hover {
+    opacity: 0.7;
+}
+
 
 /*==================== TESTIMONIAL ====================*/
 

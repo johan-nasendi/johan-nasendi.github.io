@@ -70,7 +70,9 @@ h2.title_contact {
     cursor: pointer;
 }
 
-img.icons {
+i.icons {
+    font-size: 24px;
+    color: #fff;
     width: 45px;
     height: 45px;
     filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #0006);
@@ -78,11 +80,11 @@ img.icons {
     user-select: none;
 }
 
-img:hover {
+i:hover {
     transform: scale(1.1, 1.1);
 }
 
-img.icons:active {
+i.icons:active {
     transform: scale(1.1, 1.1);
     filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
 }

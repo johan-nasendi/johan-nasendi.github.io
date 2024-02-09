@@ -29,6 +29,10 @@
     border-radius: 0 10px 10px 0;
 }
 
+.contact-links .quote_thk{
+    color: #fff;
+} 
+
 @media only screen and (max-width: 800px) {
     .contact-links,
     .contact-form-wrapper {
@@ -82,11 +86,13 @@ i.icons {
 
 i:hover {
     transform: scale(1.1, 1.1);
+    color: #f39c12;
 }
 
 i.icons:active {
     transform: scale(1.1, 1.1);
     filter: hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
+   
 }
 
 .form-item {

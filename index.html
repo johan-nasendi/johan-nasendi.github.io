@@ -20,12 +20,44 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/circles.css">
     <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <title>Johan Nasendi</title>
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="loader-wrap">
+        <div class="preloader">
+           
+            <div id="handle-preloader" class="handle-preloader">
+                <div class="animation-preloader">
+                    <div class="spinner"></div>
+                    <div class="txt-loading">
+                        <span data-text-preloader="J" class="letters-loading">
+                            J
+                        </span>
+                        <span data-text-preloader="O" class="letters-loading">
+                            O
+                        </span>
+                        <span data-text-preloader="H" class="letters-loading">
+                            H
+                        </span>
+                        <span data-text-preloader="A" class="letters-loading">
+                            A
+                        </span>
+                        <span data-text-preloader="N" class="letters-loading">
+                            N
+                        </span>
+                        
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
     <div>
         <ul class="circles">
             <li></li>
@@ -1180,7 +1212,23 @@
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
 
-
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+        // Preloader
+	$(window).on('load', function() {
+		
+		if($('.loader-wrap').length){
+			$('.loader-wrap').delay(1000).fadeOut(500);
+		}
+		
+	
+		if ($(".preloader-close").length) {
+			$(".preloader-close").on("click", function(){
+				$('.loader-wrap').delay(200).fadeOut(500);
+			})
+		}
+	});
+    </script>
 </body>
 
 </html
